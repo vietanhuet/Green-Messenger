@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00CC33"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_white" />
+
+        <com.via.green.customizes.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Friends"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.via.green.customizes.CustomTextView
+                    android:id="@+id/fragment_friendlist_add_friend"
+                    android:layout_width="25dp"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/contact" />
+
+                <com.via.green.customizes.CustomTextView
+                    android:id="@+id/fragment_home_add_conversation_triangle"
+                    android:layout_width="10dp"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/triangle"
+                    android:gravity="bottom" />
+            </LinearLayout>
+
+            <com.via.green.customizes.CustomTextView
+                android:id="@+id/fragment_friendlist_conversation"
+                android:layout_width="25dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/message" />
+
+            <com.via.green.customizes.CustomTextView
+                android:id="@+id/fragment_friendlist_personal"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/setting" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.via.green.customizes.CustomTextView
+            android:id="@+id/fragment_friend_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/add_friend_green_"
+            android:gravity="center" />
+
+        <com.via.green.customizes.CustomEditText
+            android:id="@+id/fragment_friend_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_dialog"
+            android:hint="Search friend"
+            android:paddingLeft="10dp"
+            android:textColor="#575757"
+            android:textCursorDrawable="@null"
+            android:textSize="12dp" />
+
+        <com.via.green.customizes.CustomTextView
+            android:id="@+id/fragment_friend_search"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/no_friend" />
+
+</LinearLayout>

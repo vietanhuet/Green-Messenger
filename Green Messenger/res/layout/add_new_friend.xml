@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00CC33"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_white" />
+
+        <com.via.green.customizes.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Add friend"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.via.green.customizes.CustomTextView
+                    android:id="@+id/fragment_friendlist_add_friend"
+                    android:layout_width="25dp"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/contact" />
+
+                <com.via.green.customizes.CustomTextView
+                    android:id="@+id/fragment_home_add_conversation_triangle"
+                    android:layout_width="10dp"
+                    android:layout_height="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/triangle"
+                    android:gravity="bottom" />
+            </LinearLayout>
+
+            <com.via.green.customizes.CustomTextView
+                android:id="@+id/fragment_friendlist_conversation"
+                android:layout_width="25dp"
+                android:layout_height="23dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/message" />
+
+            <com.via.green.customizes.CustomTextView
+                android:id="@+id/fragment_friendlist_personal"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/setting" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <com.via.green.customizes.CustomTextView
+            android:id="@+id/login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Add new friend"
+            android:textColor="#575757"
+            android:textSize="25dp" />
+
+        <com.via.green.customizes.CustomEditText
+            android:id="@+id/newFriendUsername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/border_dialog"
+            android:clickable="true"
+            android:hint="Friend name"
+            android:padding="10dp"
+            android:password="false"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal" >
+
+            <com.via.green.customizes.CustomTextView
+                android:id="@+id/addFriend"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_login_button"
+                android:gravity="center"
+                android:text="@string/add"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp" />
+
+            <com.via.green.customizes.CustomTextView
+                android:id="@+id/cancel"
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/cancel_button"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <com.via.green.customizes.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="Tip: If your friend is not exist, your request will be sent but your friend cannot receive it. "
+            android:textColor="#575757"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

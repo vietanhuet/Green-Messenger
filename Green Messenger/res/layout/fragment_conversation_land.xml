@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:background="#00CC33"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:orientation="horizontal" >
+
+            <com.via.green.customizes.CustomTextView
+                android:id="@+id/fragment_conversation_add_friend"
+                android:layout_width="25dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/contact" />
+
+            <com.via.green.customizes.CustomTextView
+                android:id="@+id/fragment_home_add_conversation_triangle"
+                android:layout_width="6dp"
+                android:layout_height="10dp"
+                android:background="@drawable/triangle_land_green"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:orientation="horizontal" >
+
+            <com.via.green.customizes.CustomTextView
+                android:id="@+id/fragment_home_conversation"
+                android:layout_width="25dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/message" />
+
+            <com.via.green.customizes.CustomTextView
+                android:layout_width="6dp"
+                android:layout_height="10dp"
+                android:background="@drawable/triangle_land"
+                android:gravity="right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center|right"
+            android:orientation="horizontal" >
+
+            <com.via.green.customizes.CustomTextView
+                android:id="@+id/fragment_conversation_personal"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/setting" />
+
+            <com.via.green.customizes.CustomTextView
+                android:layout_width="6dp"
+                android:layout_height="10dp"
+                android:background="@drawable/triangle_land_green"
+                android:gravity="right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.via.green.customizes.CustomTextView
+                android:id="@+id/fragment_conversation_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/new_conversation"
+                android:gravity="center" />
+
+            <com.via.green.customizes.CustomEditText
+                android:id="@+id/fragment_friend_search"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_dialog"
+                android:hint="Search conversation"
+                android:paddingLeft="8dp"
+                android:textColor="#575757"
+                android:textCursorDrawable="@null"
+                android:textSize="12dp" />
+
+            <com.via.green.customizes.CustomTextView
+                android:id="@+id/fragment_conversation_search"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/android:empty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/no_friend" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1" >
+
+            <com.via.green.customizes.CustomTextView
+                android:id="@+id/messageHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:gravity="top"
+                android:padding="10dp" />
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/border_dialog"
+                android:gravity="center_vertical"
+                android:hint="Type here"
+                android:padding="5dp"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/sendMessageButton"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/send" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
